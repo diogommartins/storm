@@ -55,7 +55,7 @@ A Question object has the following attributes:
             Açúcar e Pedra da Gávea. Além da natureza generosa, o Rio de Janeiro brinda os turistas com atrações únicas, 
             como a Baía de Guanabara, o Aterro do Flamengo, as praias de Copacabana e Ipanema, a Lagoa Rodrigo de Freitas 
             e os bairros boêmios da Lapa, Botafogo e Leblon."
-            "preco": ""
+            "preco": "799,99"
         }
 
 ## Choice [/questions/{question_id}/choices/{choice_id}]
@@ -79,40 +79,51 @@ This action allows you to vote on a question's choice.
 + Parameters
     + page: 1 (optional, number) - The page of questions to return
 
-### List All Questions [GET]
+### List All Pacotes [GET]
 
 + Response 200 (application/json)
-
-    + Headers
-
-            Link: </questions?page=2>; rel="next"
-
     + Body
 
             [
                 {
-                    "question": "Favourite programming language?",
-                    "published_at": "2014-11-11T08:40:51.620Z",
-                    "url": "/questions/1",
-                    "choices": [
-                        {
-                            "choice": "Swift",
-                            "url": "/questions/1/choices/1",
-                            "votes": 2048
-                        }, {
-                            "choice": "Python",
-                            "url": "/questions/1/choices/2",
-                            "votes": 1024
-                        }, {
-                            "choice": "Objective-C",
-                            "url": "/questions/1/choices/3",
-                            "votes": 512
-                        }, {
-                            "choice": "Ruby",
-                            "url": "/questions/1/choices/4",
-                            "votes": 256
-                        }
-                    ]
+                    "destino": "Rio de Janeiro",
+                    "published_at": "2015-07-02 08:40:51",
+                    "url": "/pacotes/1",
+                    "imagem": "http://www.braziladventuretours.com/admin/uploads/noticias/slide/13415477241233ed55138ae5ff0bac4e9500c95349.jpg"
+                    "descricao": "As belezas naturais do Rio de Janeiro já são conhecidas por todos, mas basta uma visita à cidade maravilhosa para comprovar que há muito para se encantar. A combinação de serra e mar forma uma das paisagens mais belas do mundo, principalmente quando a cidade é vista de pontos turísticos como Cristo Redentor, Pão de Açúcar e Pedra da Gávea. Além da natureza generosa, o Rio de Janeiro brinda os turistas com atrações únicas, como a Baía de Guanabara, o Aterro do Flamengo, as praias de Copacabana e Ipanema, a Lagoa Rodrigo de Freitas e os bairros boêmios da Lapa, Botafogo e Leblon."                    
+                    "preco": 799.99
+                },
+                {
+                    "destino": "Paris",
+                    "published_at": "2015-07-01 06:45:51",
+                    "url": "/pacotes/2",
+                    "imagem": "http://farm9.staticflickr.com/8539/8628276102_568cf9bdcf_z.jpg"
+                    "descricao": "Conhecida como um dos destinos mais românticos do mundo, Paris atrai casais apaixonados, amantes de artes e curiosos em conhecer os segredos da capital francesa. Entre os cartões-postais desta metrópole fascinante estão a Torre Eiffel, o museu do Louvre, o Arco do Triunfo, a Ópera Garnier e a Catedral de Notre-Dame. Aproveite a viagem para assistir aos shows dos consagrados cabarés Lido e Moulin Rouge, conhecer jardins e visitar o Palácio de Versalhes.."
+                    "preco": 1999.99
+                },
+                {
+                    "destino": "Viena",
+                    "published_at": "2015-05-21 16:45:55",
+                    "url": "/pacotes/3",
+                    "imagem": "http://farm3.staticflickr.com/2490/3769162335_533df3fe0d_z.jpg"
+                    "descricao": "Repleta de opções culturais e palácios luxuosos, Viena é perfeita para turistas apaixonados por história, música, rica arquitetura e belas paisagens. O que não falta na capital austríaca é opção de passeio. Entre os destaques da cidade considerada uma das melhores do mundo para viver estão o rio Danúbio, a Catedral de São Estevão, o Palácio de Hofburg, museus e a região de Ringstrasse, repleta de lojas e prédios históricos. Aproveite para conhecer o centro histórico (tombado como patrimônio mundial pela Unesco), parques e até fazer passeio de carruagem."
+                    "preco": 2999.99
+                },
+                {
+                    "destino": "Nova Deli",
+                    "published_at": "2015-05-21 16:45:55",
+                    "url": "/pacotes/4",
+                    "imagem": "http://farm9.staticflickr.com/8539/8628276102_568cf9bdcf_z.jpg"
+                    "descricao": "Namastê. A palavra é uma maneira respeitosa de cumprimento ou de se iniciar uma conversa na Índia e, portanto, é desta forma que as portas da capital Nova Déli se abrem aos turistas, que enxergam neste país fascinante um mergulho na religiosidade e numa cultura rica e milenar. Nesta cidade barulhenta, caótica e com tráfego beirando o insano, estão atrações incríveis e paisagens exóticas, com vacas passeando pelas ruas, edifícios modernos, carros antigos e novíssimos, mulheres vestidas com sáris coloridos e muitos templos. Há imagens dos milhares de deuses hindus, a religião mais comum na Índia, em todos os lugares. Da mesquita de Jama Masjid você ouve o belo chamado dos muezins, anunciando as preces diárias dos muçulmanos. A cidade também abriga alguns patrimônios da humanidade, como a Tumba de Humayun e o Forte Vermelho. Ao andar pelas ruas, não deixe que a sujeira acumulada e a poluição visível tire seu bom humor. Percorra as lojas que vendem produtos muito baratos e encante-se com um dos países mais interessantes do mundo. "
+                    "preco": 709.99
+                },
+                {
+                    "destino": "Copenhague",
+                    "published_at": "2015-05-21 16:45:55",
+                    "url": "/pacotes/5",
+                    "imagem": "http://farm9.staticflickr.com/8539/8628276102_568cf9bdcf_z.jpg"
+                    "descricao": "Porta de entrada para a Escandinávia, a capital da Dinamarca reúne, em um só destino, terra de contos de fadas repleta de castelos, glamour da monarquia e monumentos históricos, tudo isso sem deixar de ser moderna, com muitos prédios de design contemporâneo. Entre as atrações mais famosas estão assistir a troca da guarda em Amalienborg e visitar A Pequena Sereia, estátua baseada em um dos personagens mais conhecidos do escritor infantil Hans Christian Andersen, o que dá à cidade um toque ainda maior de fantasia. Copenhague também possui vários canais, assim como Amsterdã, onde você poderá fazer passeios de barco. Outro lugar interessante e diferente é o Christiania, bairro hippie e alternativo da cidade."
+                    "preco": 5999.99
                 }
             ]
 
