@@ -16,6 +16,8 @@
 @property (strong, nonatomic) NSURL * imagemURL;
 @property (strong, nonatomic) NSString * resourceURL;
 @property (strong, nonatomic) NSString * descricao;
+@property (strong, nonatomic) NSDate * published_at;
 
+-(instancetype) initWithContentsOfAPIResponse: (NSDictionary *)response;
 
 @end
