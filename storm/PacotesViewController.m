@@ -42,7 +42,7 @@
 }
 
 -(void)updateAvaiablePacotes{
-    [self.api.manager GET: @"http://private-30403b-storm4.apiary-mock.com/pacotes"
+    [self.api.manager GET: [self.api URLForPath: @"/pacotes"]
                parameters: nil
                   success: ^(AFHTTPRequestOperation *operation, id responseObject) {
                       for (NSDictionary * pacote in responseObject){
