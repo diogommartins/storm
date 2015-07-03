@@ -10,6 +10,7 @@
 #import "MPSkewedCell.h"
 #import "MPSkewedParallaxLayout.h"
 #import "VBPacote.h"
+#import "PacoteDetailViewController.h"
 
 #define kPACOTE_CELL_IDENTIFIER @"pacoteCell"
 
@@ -69,14 +70,17 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender
-{
-    
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString: @"showPacoteDetail"]){
+        PacoteDetailViewController * vc = [segue destinationViewController];
+        NSIndexPath * indexPath = sender;
+        [vc setPacote: [self.pacotes objectAtIndex: indexPath.row]];
+    }
 }
 
 #pragma mark - UICollectionViewDatasource
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return [self.pacotes count];
 }
 
@@ -102,7 +106,7 @@
 #pragma mark - UICollectionViewDelegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    [self performSegueWithIdentifier: @"showPacoteDetail" sender: self];
+    [self performSegueWithIdentifier: @"showPacoteDetail" sender: indexPath];
 }
 
 @end
