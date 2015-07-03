@@ -20,4 +20,6 @@ static NSString *kAPIBasePath = @"http://private-30403b-storm4.apiary-mock.com";
                success: (void (^)(AFHTTPRequestOperation *operation, UIImage * image))success
                failure: (void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 
+-(NSString *)URLForPath: (NSString *)path;
+
 @end

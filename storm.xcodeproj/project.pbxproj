@@ -10,7 +10,7 @@
 		4E98828D7114B738A87345D0 /* libPods-storm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C84F639BE80B731949AA8185 /* libPods-storm.a */; };
 		664A8ABB1B44A5AC0086C040 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 664A8ABA1B44A5AC0086C040 /* main.m */; };
 		664A8ABE1B44A5AC0086C040 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 664A8ABD1B44A5AC0086C040 /* AppDelegate.m */; };
-		664A8AC11B44A5AC0086C040 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 664A8AC01B44A5AC0086C040 /* ViewController.m */; };
+		664A8AC11B44A5AC0086C040 /* PacotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 664A8AC01B44A5AC0086C040 /* PacotesViewController.m */; };
 		664A8AC41B44A5AC0086C040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664A8AC21B44A5AC0086C040 /* Main.storyboard */; };
 		664A8AC61B44A5AC0086C040 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664A8AC51B44A5AC0086C040 /* Images.xcassets */; };
 		664A8AC91B44A5AC0086C040 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 664A8AC71B44A5AC0086C040 /* LaunchScreen.xib */; };
@@ -19,6 +19,8 @@
 		6653473E1B46EF36002EE84C /* VBPacote.m in Sources */ = {isa = PBXBuildFile; fileRef = 6653473C1B46EF36002EE84C /* VBPacote.m */; };
 		665347411B46FCFC002EE84C /* VBAPIManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 6653473F1B46FCFC002EE84C /* VBAPIManager.h */; };
 		665347421B46FCFC002EE84C /* VBAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 665347401B46FCFC002EE84C /* VBAPIManager.m */; };
+		665347451B471CE0002EE84C /* PacoteDetailViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 665347431B471CE0002EE84C /* PacoteDetailViewController.h */; };
+		665347461B471CE0002EE84C /* PacoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665347441B471CE0002EE84C /* PacoteDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +39,8 @@
 		664A8ABA1B44A5AC0086C040 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		664A8ABC1B44A5AC0086C040 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		664A8ABD1B44A5AC0086C040 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		664A8ABF1B44A5AC0086C040 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = ViewController.h; sourceTree = "<group>"; };
-		664A8AC01B44A5AC0086C040 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		664A8ABF1B44A5AC0086C040 /* PacotesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = PacotesViewController.h; sourceTree = "<group>"; };
+		664A8AC01B44A5AC0086C040 /* PacotesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacotesViewController.m; sourceTree = "<group>"; };
 		664A8AC31B44A5AC0086C040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		664A8AC51B44A5AC0086C040 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		664A8AC81B44A5AC0086C040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		6653473C1B46EF36002EE84C /* VBPacote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBPacote.m; sourceTree = "<group>"; };
 		6653473F1B46FCFC002EE84C /* VBAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = VBAPIManager.h; sourceTree = "<group>"; };
 		665347401B46FCFC002EE84C /* VBAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBAPIManager.m; sourceTree = "<group>"; };
+		665347431B471CE0002EE84C /* PacoteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; name = PacoteDetailViewController.h; path = ../PacoteDetailViewController.h; sourceTree = "<group>"; };
+		665347441B471CE0002EE84C /* PacoteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PacoteDetailViewController.m; path = ../PacoteDetailViewController.m; sourceTree = "<group>"; };
 		6969D75D248CDA0F4DCE3ADD /* Pods-storm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storm.release.xcconfig"; path = "Pods/Target Support Files/Pods-storm/Pods-storm.release.xcconfig"; sourceTree = "<group>"; };
 		A5A2BC34F77A7FF6D81CC5A1 /* Pods-storm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-storm/Pods-storm.debug.xcconfig"; sourceTree = "<group>"; };
 		C84F639BE80B731949AA8185 /* libPods-storm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-storm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,11 +100,10 @@
 		664A8AB71B44A5AC0086C040 /* storm */ = {
 			isa = PBXGroup;
 			children = (
+				665347471B471CE7002EE84C /* Controllers */,
 				664A8ADE1B44B6030086C040 /* Models */,
 				664A8ABC1B44A5AC0086C040 /* AppDelegate.h */,
 				664A8ABD1B44A5AC0086C040 /* AppDelegate.m */,
-				664A8ABF1B44A5AC0086C040 /* ViewController.h */,
-				664A8AC01B44A5AC0086C040 /* ViewController.m */,
 				664A8AC21B44A5AC0086C040 /* Main.storyboard */,
 				664A8AC51B44A5AC0086C040 /* Images.xcassets */,
 				664A8AC71B44A5AC0086C040 /* LaunchScreen.xib */,
@@ -144,6 +147,17 @@
 				665347401B46FCFC002EE84C /* VBAPIManager.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		665347471B471CE7002EE84C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				665347431B471CE0002EE84C /* PacoteDetailViewController.h */,
+				665347441B471CE0002EE84C /* PacoteDetailViewController.m */,
+				664A8ABF1B44A5AC0086C040 /* PacotesViewController.h */,
+				664A8AC01B44A5AC0086C040 /* PacotesViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		B16AE873874AC20C78B4CDDE /* Pods */ = {
@@ -298,11 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				665347461B471CE0002EE84C /* PacoteDetailViewController.m in Sources */,
+				665347451B471CE0002EE84C /* PacoteDetailViewController.h in Sources */,
 				6653473D1B46EF36002EE84C /* VBPacote.h in Sources */,
 				665347411B46FCFC002EE84C /* VBAPIManager.h in Sources */,
 				665347421B46FCFC002EE84C /* VBAPIManager.m in Sources */,
 				6653473E1B46EF36002EE84C /* VBPacote.m in Sources */,
-				664A8AC11B44A5AC0086C040 /* ViewController.m in Sources */,
+				664A8AC11B44A5AC0086C040 /* PacotesViewController.m in Sources */,
 				664A8ABE1B44A5AC0086C040 /* AppDelegate.m in Sources */,
 				664A8ABB1B44A5AC0086C040 /* main.m in Sources */,
 			);

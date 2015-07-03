@@ -9,6 +9,8 @@
 #import "VBAPIManager.h"
 #import <AFHTTPRequestOperation.h>
 
+static const NSString * kAPIbaseURL = @"http://private-30403b-storm4.apiary-mock.com";
+
 @implementation VBAPIManager
 
 -(instancetype)init{
@@ -47,13 +49,13 @@
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         success(operation, responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Image error: %@", error);
+        failure(operation, error);
     }];
     [operation start];
-    
 }
 
--(void)testes{
+-(NSString *)URLForPath:(NSString *)path{
+    return [NSString stringWithFormat: @"%@%@", kAPIbaseURL, path];
 }
 
 @end
