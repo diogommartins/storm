@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VBAPIManager.h"
 
 @interface ViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) NSMutableArray * pacotes;
+@property (strong, nonatomic) VBAPIManager * api;
 
 - (void)updateAvaiablePacotes;
 

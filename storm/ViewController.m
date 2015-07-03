@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MPSkewedCell.h"
 #import "MPSkewedParallaxLayout.h"
+#import "VBPacote.h"
 
 #define kPACOTE_CELL_IDENTIFIER @"pacoteCell"
 
@@ -22,7 +23,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.pacotes = [NSMutableArray new];
+    self.api = [VBAPIManager new];
     [self updateAvaiablePacotes];
+    
     MPSkewedParallaxLayout *layout = [[MPSkewedParallaxLayout alloc] init];
     layout.lineSpacing = 2;
     layout.itemSize = CGSizeMake(CGRectGetWidth(self.view.bounds), 250);
@@ -37,6 +41,21 @@
 }
 
 -(void)updateAvaiablePacotes{
+    [self.api.manager GET: @"http://private-30403b-storm4.apiary-mock.com/pacotes"
+               parameters: nil
+                  success: ^(AFHTTPRequestOperation *operation, id responseObject) {
+                      for (NSDictionary * pacote in responseObject){
+                          [self.pacotes addObject: [[VBPacote alloc] initWithContentsOfAPIResponse: pacote]];
+                      }
+                      [self.collectionView reloadData];
+                      
+                  }
+                  failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                      NSLog(@"Disparar alerta para usuário e adicionar esta requisição novamente a fila após X segundos");
+                  }];
+}
+
+-(void)updateCellsBackgroundImage{
     
 }
 
@@ -57,11 +76,20 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSInteger index = indexPath.item % 5 + 1;
     MPSkewedCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier: kPACOTE_CELL_IDENTIFIER
                                                                    forIndexPath: indexPath];
-    cell.image = [UIImage imageNamed:[NSString stringWithFormat:@"%zd", index]];
-    cell.text = @"teste";
+    
+    VBPacote * pacote = [self.pacotes objectAtIndex: indexPath.row];
+    [self.api getImageWithURL: pacote.imagemURL
+                      success: ^(AFHTTPRequestOperation *operation, UIImage *image) {
+                          cell.image = image;
+                          
+                      }
+                      failure: ^(AFHTTPRequestOperation *operation, NSError *error) {
+                          NSLog(@"Adicionar uma imagem de placeholder?");
+                      }];
+    
+    cell.text = [pacote destino];
     
     return cell;
 }

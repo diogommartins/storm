@@ -17,6 +17,8 @@
 		664A8AD51B44A5AC0086C040 /* stormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 664A8AD41B44A5AC0086C040 /* stormTests.m */; };
 		6653473D1B46EF36002EE84C /* VBPacote.h in Sources */ = {isa = PBXBuildFile; fileRef = 6653473B1B46EF36002EE84C /* VBPacote.h */; };
 		6653473E1B46EF36002EE84C /* VBPacote.m in Sources */ = {isa = PBXBuildFile; fileRef = 6653473C1B46EF36002EE84C /* VBPacote.m */; };
+		665347411B46FCFC002EE84C /* VBAPIManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 6653473F1B46FCFC002EE84C /* VBAPIManager.h */; };
+		665347421B46FCFC002EE84C /* VBAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 665347401B46FCFC002EE84C /* VBAPIManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		664A8AD41B44A5AC0086C040 /* stormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stormTests.m; sourceTree = "<group>"; };
 		6653473B1B46EF36002EE84C /* VBPacote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = VBPacote.h; sourceTree = "<group>"; };
 		6653473C1B46EF36002EE84C /* VBPacote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBPacote.m; sourceTree = "<group>"; };
+		6653473F1B46FCFC002EE84C /* VBAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = VBAPIManager.h; sourceTree = "<group>"; };
+		665347401B46FCFC002EE84C /* VBAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBAPIManager.m; sourceTree = "<group>"; };
 		6969D75D248CDA0F4DCE3ADD /* Pods-storm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storm.release.xcconfig"; path = "Pods/Target Support Files/Pods-storm/Pods-storm.release.xcconfig"; sourceTree = "<group>"; };
 		A5A2BC34F77A7FF6D81CC5A1 /* Pods-storm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-storm/Pods-storm.debug.xcconfig"; sourceTree = "<group>"; };
 		C84F639BE80B731949AA8185 /* libPods-storm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-storm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +140,8 @@
 			children = (
 				6653473B1B46EF36002EE84C /* VBPacote.h */,
 				6653473C1B46EF36002EE84C /* VBPacote.m */,
+				6653473F1B46FCFC002EE84C /* VBAPIManager.h */,
+				665347401B46FCFC002EE84C /* VBAPIManager.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -293,6 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6653473D1B46EF36002EE84C /* VBPacote.h in Sources */,
+				665347411B46FCFC002EE84C /* VBAPIManager.h in Sources */,
+				665347421B46FCFC002EE84C /* VBAPIManager.m in Sources */,
 				6653473E1B46EF36002EE84C /* VBPacote.m in Sources */,
 				664A8AC11B44A5AC0086C040 /* ViewController.m in Sources */,
 				664A8ABE1B44A5AC0086C040 /* AppDelegate.m in Sources */,
